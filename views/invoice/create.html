@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturas One More Member's</title>
+    <link rel="stylesheet" href="/css/mainInvoice.css">
+</head>
+<body>
+<div class="control-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-2-4">
+                <a class="navbar-brand" href="../../index.html">OnE MoRe MeMbEr</a>
+                <div class="slogan">Facturación </div>
+
+                <label for="config_tax">IVA:
+                    <input type="checkbox" id="config_tax" />
+                </label>
+                <label for="config_tax_rate" class="taxrelated">Tasa:
+                    <input type="text" id="config_tax_rate" value="13"/>%
+                </label>
+                <label for="config_note">Nota:
+                    <input type="checkbox" id="config_note" />
+                </label>
+                
+            </div>
+            <div class="col-4 text-right">
+            <a href="javascript:window.print()">Imprimir</a>
+            </div><!--.col-->
+        </div><!--.row-->
+    </div><!--.container-->
+</div><!--.control-bar-->
+
+<header class="row">
+    <div class="logoholder text-center" >
+        <img src="../../RNF/LogoB.jpg" width="100px">
+    </div><!--.logoholder-->
+
+    <div class="me">
+        <p contenteditable>
+            <strong>On More Member's</strong><br>
+            Calle 15 # 35-52<br>
+            Cali, Colombia.<br>
+        
+        </p>
+    </div><!--.me-->
+
+<div class="info">
+        <p contenteditable>
+        Web: <a href="#">www.onemoremember.com</a><br>
+        E-mail: <a href="#">admin@onemoremenbers.com</a><br>
+        Tel: +602-345-98-55
+    </p>
+</div><!-- .info -->
+
+</header>
+
+
+<div class="row section">
+
+	<div class="col-2">
+        <h1 contenteditable>Factura atencion veterinaria</h1>
+    </div><!--.col-->
+
+    <div class="col-2 text-right details">
+        <p contenteditable>
+            Fecha: <input type="text" class="datePicker" /><br>
+            Factura #: <input type="text" value="XX001" /><br>
+            Vence: <input class="twoweeks" type="text"/>
+        </p>
+    </div><!--.col-->
+    <div class="col-2">
+        <p contenteditable class="client">
+            <strong>Facturar a</strong><br>
+            <label for="user_select" class="d-flex flex-row">Nombre del Dueño Mascota</label>
+                <div class="input-group mb-3">
+                    <label for="owner"></label>
+                    <input type="text" name="owner" id="owner" value="" disabled>
+                </div>
+                <label for="user_select" class="d-flex flex-row">Apellidos</label>
+                <div class="input-group mb-3">
+                    <label for="lastname"></label>
+                    <input type="text" name="lastname" id="lastname" value="" disabled>
+                </div>
+            <label class="d-flex flex-row">Numero identificacion Cliente</label>
+                <div class="input-group mb-3">
+                    <label for="id"></label>
+                    <input type="text" name="id" id="id" value="" disabled>
+                </div>
+            <label class="d-flex flex-row">Nombre Mascota</label>
+                <div class="input-group mb-3">
+                    <label for="pet"></label>
+                    <input type="text" name="pet" id="pet" value="" disabled>
+                </div>
+                <label class="d-flex flex-row">Tel Cliente</label>
+                <div class="input-group mb-3">
+                    <label for="contacNumber"></label>
+                    <input type="text" name="contacNumber" id="contacNumber" value="" disabled>
+                </div>
+        </p>
+    </div><!--.col-->  
+
+</div><!--.row-->
+
+<div class="invoicelist-body">
+    <table>
+        <thead contenteditable>
+            <th width="5%">Código</th>
+            <th width="60%">Descripción</th>
+            <th width="10%">Cant.</th>
+            <th width="15%">Precio</th>
+            <th class="taxrelated">IVA</th>
+            <th width="10%">Total</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td width='5%'><a class="control removeRow" href="#">x</a> <span contenteditable>12345</span></td>
+                <td width='60%'><span contenteditable>Descripción</span></td>
+                <td class="amount"><input type="text" value="1"/></td>
+                <td class="rate"><input type="text" value="99" /></td>
+                <td class="tax taxrelated"></td>
+                <td class="sum"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="control newRow" href="#">+ Nueva fila</a>
+</div><!--.invoice-body-->
+
+<div class="invoicelist-footer">
+    <table contenteditable>
+        <tr class="taxrelated">
+            <td>IVA:</td>
+            <td id="total_tax"></td>
+        </tr>
+        <tr>
+            <td><strong>Total:</strong></td>
+            <td id="total_price"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="note" contenteditable>
+    <h2>Nota:</h2>
+</div><!--.note-->
+
+<footer class="row">
+    <div class="col-1 text-center">
+        <p class="notaxrelated" contenteditable>El monto de la factura no incluye el impuesto sobre las ventas.</p>
+        
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../js/invoice/invoice.js"></script>
+</body>
+</html>

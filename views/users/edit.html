@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OnE MoRe MeMbEr</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="RNF/logo.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Shadows Into Light:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-caveat fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">OnE MoRe MeMbEr</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/views/users/create.html">Registro Usuario</a></li> <!--Aqui se adjunta el link del form de registro-->
+                        <li class="logged nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/views/pets/create.html">Registro Mascota</a></li>
+                        <li class="logged nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#conocenos">Conocenos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contacto">Contacto</a></li>
+                        <li class="login_link nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/views/users/signin.html">Inicio de Sesion</a></li>
+                        <li class="logged nav-item mx-0 mx-lg-1" id="welcome_message"><span>Bienvenido</span></li>
+                        <li class="logged nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/views/users/list.html">Gestion Usuarios</a></li>
+                        <li class="logged nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="">Gestionar Mascotas</a></li>
+                        <li class="logged nav-item mx-0 mx-lg-1"><a id="logout_link" class="nav-link py-3 px-0 px-lg-3 rounded" href="">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-dark text-center">
+<body id="page-top">
+    <div class="primary py-4 d-flex justify-content-center ">
+    <div class="col-lg-4">
+        <div class="card text-center borde-elegante">
+            <div class="card-header text-bg-primary">
+                <h5>Actualizacion Usuario</h5>
+            </div>
+            <form action="" method="post" name="FormEntrar"></form>
+                <div class="card-body text-bg-info">
+                        <div class="primary">
+                            <div class="col-lg-12">
+                                <label for="" class="d-flex flex-row">Nombres</label>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" id="name" class="form-control control-focus" placeholder="Nombres" required> 
+                            </div>
+                        </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="" class="d-flex flex-row">Apellidos</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="lastname" class="form-control control-focus" placeholder="Apellidos" required> 
+                                </div>  
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="" class="d-flex flex-row"> 
+                                Documento de Identidad
+                            </label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="id" class="form-control control-focus" placeholder="Ingrese Documento" required>
+                                    <span class="input-group-text text-bg-primary" id="basic-addon1">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="" class="d-flex flex-row">Numero de Contacto</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="contactNumber" class="form-control control-focus" placeholder="Numero Celular" required>
+                                    <span class="input-group-text text-bg-primary" id="basic-addon1">
+                                        <i class="fa-sharp fa-solid fa-cat"></i>
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="" class="d-flex flex-row">Correo electronico</label>
+                                <div class="input-group mb-3">
+                                    <input type="email" id="email" class="form-control control-focus" placeholder="Ingrese su correo electronico" required>
+                                    <span class="input-group-text text-bg-primary" id="basic-addon1">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span> 
+                                </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="password" class="d-flex flex-row">Contraseña</label>
+                            <div class="input-group mb-3">
+                                <input type="password" id="password" name="contra" class="form-control" placeholder="******" aria-describedby="sizing-addon1" required>
+                                <span class="input-group-text text-bg-primary" id="basic-addon1"><i class="fa-sharp fa-solid fa-key"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="password" class="d-flex flex-row">Rol</label>
+                            <div class="input-group mb-3">
+                                <select name="role" id="role">
+                                    <option value="medico">Medico</option>
+                                    <option value="user" selected>Usuario</option>
+                                    <option value="admin">Administrador</option>
+                                </select>  
+                                <span class="input-group-text text-bg-primary" id="basic-addon1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <label for="pet_select" class="d-flex flex-row">Nombre de la Mascota del Usuario</label>
+                            <div class="input-group mb-3">
+                                <select name="pets" id="pets" multiple>
+                                    <option value="null" selected>Ninguna</option>
+                                </select>  
+                                <span class="input-group-text text-bg-primary" id="basic-addon1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="col-lg-12">
+                            <input type="submit" id="editBtn" class="form-control btn btn-warning btn-lg btn-block" value="ACTUALIZAR DATOS USUARIO">
+                        </div>
+                    </div>
+                </div>
+            </form>                                                                                                                                             
+        </div>   
+    </div> 
+    </div>       
+                <!-- Bootstrap core JS-->  
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="../../js/scripts.js"></script>
+                <script src="../../js/users//edit.js"></script>
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <!-- * *                               SB Forms JS                               * *-->
+                <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+</body>
+
+
+</html>
