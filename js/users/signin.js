@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', event => { // se agresa un listener 
                 document.cookie = "name=" + json.user.name + " " + json.user.lastname + ";path=/"; //se guardan los datos name y lastname en una cookie, para luego mostrarlos cuando se recargue la pg al iniciar seccion
                 document.cookie = "token=" + json.token + ";path=/"; //se guardan los datos name y lastname en una cookie, para luego mostrarlos cuando se recargue la pg al iniciar seccion
 
-                document.location.href='/'; // recarga la pagina central con el nombre y apellido del usuario
+                document.location.href='/SIVeterinaria-html-css-js/'; // recarga la pagina central con el nombre y apellido del usuario
             } else {
                 alert(json.message); // muestra el mensaje que arroja luego de la validacion 
             }
