@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', event => {
             
             alert(json.message ); //envia mensaje que confirma la creacion del usuario
             console.log(json, 'json');
-            location.href = '/index.html';
+            location.href = '/SIVeterinaria-html-css-js/index.html';
         } )
         .catch(error => console.log(error, 'error'))
     }
