@@ -6,7 +6,7 @@ const token = document.cookie
 var pets_element = document.getElementById("pets");
 window.addEventListener('DOMContentLoaded', event => {
 
-    let url = "http://localhost:3000/api/pets"; // se hace referencia al origen de los datos 
+    let url = "https://siveterinaria.onrender.com/api/pets"; // se hace referencia al origen de los datos 
     fetch(url, { // se hace solicitud a la url
         headers: { // cuando no se asigna metodo, por descarte toma GET
             "Access-Control-Allow-Origin": "*",
@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
         var role = role_element.value;        
         var pets = pets_element.value;
         console.log(pets)
-        fetch("http://localhost:3000/api/auth/signup", { //mediante la funcion fetch y el metodo POST
+        fetch("https://siveterinaria.onrender.com/api/auth/signup", { //mediante la funcion fetch y el metodo POST
             method: "POST",
             body: JSON.stringify({
                 name: name,

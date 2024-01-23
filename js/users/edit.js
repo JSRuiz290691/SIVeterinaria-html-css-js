@@ -13,7 +13,7 @@ var role_element = document.getElementById('role');
 var pets_element = document.getElementById('pets');
 
 function getUser(user_id) {
-    fetch("http://localhost:3000/api/users/" + user_id, {
+    fetch("https://siveterinaria.onrender.com/api/users/" + user_id, {
         method: "GET",
         headers: {
             "Access-Control-Allow-Origin": "*",
@@ -33,7 +33,7 @@ function getUser(user_id) {
     })
     .catch(error => console.log(error, 'error'))
 
-    let url = "http://localhost:3000/api/pets"; // se hace referencia al origen de los datos 
+    let url = "https://siveterinaria.onrender.com/api/pets"; // se hace referencia al origen de los datos 
     fetch(url, { // se hace solicitud a la url
         headers: { // cuando no se asigna metodo, por descarte toma GET
             "Access-Control-Allow-Origin": "*",
@@ -79,7 +79,7 @@ function editUser(user_id, token) {
     if (password_element.value) {
         body.password = password_element.value;
     }
-    fetch("http://localhost:3000/api/users/" + user_id, {
+    fetch("https://siveterinaria.onrender.com/api/users/" + user_id, {
         method: "PUT",
         body: JSON.stringify(body),
         headers: {
