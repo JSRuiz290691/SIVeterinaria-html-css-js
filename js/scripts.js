@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', event => {
         e.preventDefault();
         document.cookie = 'name=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
         document.cookie = 'token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        document.location.href='/';
+        document.location.href='/SIVeterinaria-html-css-js/';
     });
 
     // Navbar shrink function
